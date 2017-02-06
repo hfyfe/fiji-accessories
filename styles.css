@@ -1,0 +1,256 @@
+body {
+  left: 0px ;
+}
+
+#logo {
+  width: auto ;
+  height: 100% ;
+  display: inline-block ;
+}
+
+.bodytop {
+  height: 475px ;
+  width: 100% ;
+  left: 0px ;
+}
+
+.bodybottom {
+  margin-top: 40px ;
+  height: 200px ;
+  width: 100% ;
+  background-color: black ;
+}
+
+#hero {
+  width: 100% ;
+  height: 475px ;
+  background-size: 70% ;
+  overflow: hidden ;
+  background-size: cover ;
+  clip: rect(0px,400px,200px,0px) ;
+  z-index: -10 ;
+  background-repeat: no-repeat ;
+}
+
+.summary {
+  width: 70% ;
+  margin: 0 auto ;
+  position: relative ;
+  bottom: 475px ;
+  vertical-align: bottom ;
+  padding-top: 20% ;
+}
+
+#pageSummary {
+  vertical-align: bottom ;
+  text-align: center ;
+  color: white ;
+}
+
+#body {
+  position: absolute ;
+  top: 0px ;
+  width: 100% ;
+}
+
+.productTile {
+  padding-top: 60px ;
+  display: inline-block ;
+  margin: 0 auto ;
+  width: 33% ;
+  height: auto ;
+}
+
+.productTileImage {
+  display: block ;
+  margin: auto ;
+  height: auto ;
+  width: auto ;
+  max-width: 100% ;
+  max-height: 100% ;
+}
+
+.productDescription {
+  text-align: center ;
+}
+
+.header {
+  padding: 0 ;
+  position: fixed ;
+  top: 1px ;
+  left: 1px ;
+  width: 100% ;
+  height: 60px ;
+  z-index: 10 ;
+}
+
+.header p {
+  color: white ;
+  font-size: 18 ;
+}
+
+a:visited {
+    color: white ;
+}
+
+.headerLeft {
+  height: 100% ;
+  text-align: center ;
+  vertical-align: top ;
+  display: inline ;
+}
+
+.headerLeft div {
+  display: inline-block ;
+  vertical-align: text-top ;
+  width: 100px ;
+  height: 100% ;
+}
+
+
+.headerRight {
+  float: right ;
+  height: 100% ;
+  text-align: center ;
+  vertical-align: top ;
+}
+
+.headerRight div {
+  display: inline-block ;
+  width: 100px ;
+  height: 100% ;
+}
+
+#cartLink p:hover {
+  text-decoration: underline ;
+}
+
+#cart {
+  display: none ;
+  position: absolute ;
+  top: 60px ;
+  right: 25px ;
+  width: 25% ;
+  min-width: 250px ;
+  height: 200px ;
+  background-color: white ;
+  border-radius: 12px ;
+  border: 1px solid black ;
+}
+
+#cartHeader {
+  border-top-left-radius: 12px ;
+  border-top-right-radius: 12px ;
+  background-color: #dddddd ;
+  height: 40px ;
+  width: 100% ;
+  border-bottom: 2px solid black ;
+  text-align: center ;
+}
+
+#cartHeader h3 {
+  position: relative ;
+  top: 10px ;
+  display: inline ;
+  margin: 0 auto ;
+  vertical-align:middle ;
+}
+
+#cartBottom {
+  border-top: 2px solid black ;
+  height: 40px ;
+  width: 100% ;
+}
+
+#cartSummary {
+  width: 100% ;
+  position: relative ;
+  top: 10px ;
+  text-align: center ;
+}
+
+#cartBottom p {
+  color: black ;
+  display: inline-block;
+  width: auto ;
+  margin: 0 auto ;
+  padding-left: 5% ;
+  padding-right: 5% ;
+}
+
+#cartItems {
+  height: 100px ;
+  width: 100% ;
+}
+
+#cartItems p {
+  font-size: 16 ;
+  color: black ;
+  display: inline-block ;
+  width: 35% ;
+  vertical-align: middle ;
+}
+
+div.cartItem {
+  width: 100% ;
+  height: 70px ;
+  color: black ;
+}
+
+.itemQuantity {
+  font-size: 14 ;
+}
+
+.addToCart {
+  text-align: center ;
+}
+
+.button {
+  padding: 5px 15px ;
+  background: #ffffff ;
+  border-radius: 5px ;
+}
+
+.starter {
+  display: none ;
+}
+
+.emptyCart {
+  visibility: hidden ;
+}
+
+.buttonItemAdded {
+  background-color: red ;
+  font-weight: bold ;
+}
+
+@media only screen and (max-width: 450px) {
+  #hero, .bodytop {
+    height: 300px ;
+  }
+
+  .productTile {
+    width: 100% ;
+  }
+
+  .header p {
+    color: white ;
+    font-size: 14 ;
+  }
+
+  .headerLeft div {
+    width: 80px ;
+  }
+
+  .headerRight div {
+    width: 80px ;
+  }
+
+  .summary {
+    bottom: 250px ;
+  }
+
+  #pageSummary {
+    font-size: 18 ;
+  }
+}

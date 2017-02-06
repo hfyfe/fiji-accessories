@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page Title Goes Here</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="shoppingcart.js"></script>
+  <script type="text/javascript" src="getcontent.js"></script>
+  <script type="text/javascript" src="cartdisplay.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+      <div class="header">
+        <div class="headerLeft">
+          <div id="companyName">
+            <a href=""><img id="logo" src="http://www.fijiwater.com/content/dam/fijiwater/base/fiji_logo.png"></a>
+          </div>
+          <div id="shopLink">
+            <p><a href="">Shop</a></p>
+          </div>
+        </div>
+        <div class="headerRight">
+            <div id="loginLink">
+              <p><a href="">Login</a></p>
+            </div>
+            <div id="cartLink">
+              <p id="cartQuantity">Cart (0)</p>
+            </div>
+            <div id="cart">
+              <div id="cartHeader">
+                <h3>Your Cart</h3>
+              </div>
+              <div id="cartItems">
+                <div class="cartItem emptyCart" itemID="0">
+                  <p class="itemName">Name Here</p>
+                  <p class="itemPrice">$0.00</p>
+                  <select class="itemQuantity">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <div id="cartBottom">
+                <div id="cartSummary">
+                  <p>Subtotal:</p>
+                  <p id="subtotal">$0.00</p>
+                </div>
+                <input class="button checkoutButton" type="button" value="Checkout"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div id="body">
+    <div class="bodytop">
+      <div id="hero">
+      </div>
+      <div class="summary">
+        <h1 id="pageSummary"></h1>
+      </div>
+    </div>
+    <div class="bodymiddle">
+      <div id="productGrid">
+        <div class='productTile starter'>
+          <img class='productTileImage'></img>
+          <div class='productDescription'>
+            <h4 class='productName'></h4>
+            <h4 class='productPrice'></h4>
+          </div>
+          <div class="addToCart">
+            <input class="button" type="button" value="Add To Cart"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bodybottom">
+    </div>
+  </div>
+</body>
+</html>
